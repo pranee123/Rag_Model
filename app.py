@@ -21,7 +21,7 @@ img = ""
 # if file_upload: 
 if file_upload is not None:
     img = Image.open(file_upload)
-    st.image(img,caption="Image Uplodaded",use_column_width=True)
+    st.image(img, use_container_width=True)
 # Function for response
 def gemini_response(user_input,img):
     model = genai.GenerativeModel(model_name="gemini-1.5-flash")
